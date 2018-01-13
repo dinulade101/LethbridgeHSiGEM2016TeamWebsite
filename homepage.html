@@ -1,0 +1,337 @@
+{{Team:Lethbridge_HS/bootstrapcss}} {{Team:Lethbridge_HS/maincss}}
+<html lang="en">
+    <head>
+        
+        
+        
+         <!-- Wiki Style Reset (From U of C)-->
+    <style type="text/css">
+      /* Reset the wiki style by overriding with a reset stylesheet.
+         The relevant wiki css rules are reset by using rules with higher priority.
+         (Written by Florian Albrecht)
+         Shoutout to the 2016 U of C wiki */
+
+      /* Start general reset ================================================== */
+        html body {font-size: inherit;font-family: inherit;background-color: transparent;color: inherit;padding: 0;}
+        div#globalWrapper {font-size: inherit;margin: 0;padding: 0;position: static;width: auto;}
+      /* Start top-section reset ============================================== */
+        div#top-section {border: 0;height: auto;margin: 0;position: static;width: auto;}
+        div#p-logo {height: auto;position: static;width: auto;z-index: auto;}
+        div#p-logo a, div#p-logo a:hover {text-decoration: none; font-family: 'Roboto', sans-serif;}
+        div#menubar {font-family: inherit;font-size: inherit;line-height: inherit;position: static;top: 0px;white-space: normal;width: auto;z-index: auto;}
+        div.left-menu, div.left-menu a {color: inherit;left: 0;text-align: left;text-transform: none;font-family: 'Roboto', sans-serif;}
+        div#menubar ul {color: inherit;list-style: disc outside none;margin: 0;padding: 0; font-family: 'Roboto', sans-serif;}
+        div#menubar li {cursor: auto;display: list-item;padding: 0;margin: 0;position: static; font-family: 'Roboto', sans-serif;}
+        div.left-menu li a {padding: 0; font-family: 'Roboto', sans-serif;}
+        div.left-menu:hover {color: inherit;background-color: transparent;}
+        div.left-menu:hover a {color: inherit;font-family: 'Roboto', sans-serif;}
+        div.right-menu, div.right-menu a {color: inherit;right: 0;text-align: left;font-family: 'Roboto', sans-serif;}
+        div.right-menu li a {background-color: transparent;color: inherit;padding: 0;font-family: 'Roboto', sans-serif;}
+        div.right-menu li a:hover {color: inherit;text-decoration: none;font-family: 'Roboto', sans-serif;}
+        div#search-controls {background-color: transparent;height: auto;position: static;right: 0;text-align: left;top: 0;width: auto;z-index: auto;}
+      /* Start content reset ================================================== */
+        div#content {background: transparent;border: 0;color: inherit;line-height: inherit;margin: 0;padding: 0;position: static;width: auto;z-index: auto;}
+        a:link, a:hover, a:active, a:visited{color: white; text-decoration: none;font-family: 'Roboto', sans-serif;}
+        body li {margin: 0; font-family: 'Roboto', sans-serif;}
+        body h1, body h2, body h3, body h4, body h5, body h6 {background: transparent;border: 0;color: inherit;padding: 0; font-family: 'Roboto', sans-serif;}
+        body .firstHeading {margin: 0;}
+        div#contentSub {color: inherit;font-size: inherit;line-height: inherit;margin: 0;width: auto;}
+        div#catlinks {background-color: transparent;border: 0;clear: both;margin: 0;padding: 0;}
+      /* Start footer reset =================================================== */
+        div#footer-box {background-color: transparent;border: 0;margin: 0;padding: 0;width: auto;}
+        div#footer {color: inherit;font-size: inherit;text-align: left;}
+        div#f-poweredbyico, div#f-copyrightico {float: none;}
+        div#footer li {margin: 0;display: list-item; font-family: 'Roboto', sans-serif;}
+      </style>
+
+      <!-- SideMenu for iGEM Stuff -->
+      <style type="text/css">
+      #sideMenu{width: 200px;position: absolute;top: 20px;left: 1020px;z-index: 10;padding-top: 0px;padding-bottom: 15px;padding-left: 15px;padding-right: 15px;background-color: white;text-align: left;display: none;z-index: 9996;}
+      #content{width: 100%;padding: 0px;margin-left: 0px;}
+      #top_title{overflow: hidden;display: none;}
+      #top_menu_14{height: 20px;}
+      #top_menu_under{height: 0px;}
+      #globalWrapper{padding-bottom: 200px;}
+      </style>
+
+      <!-- Custom Styling -->
+      <style>
+      a {list-style-image: none;}
+      ul {list-style-image: none;}
+      ol {list-style-image: none;}
+      li {list-style-image: none;}
+      </style>
+
+    <!-- Import Google Icon Font -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Page Title -->
+    <title>Lethbridge HS iGEM 2016</title>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        	
+<!--<link rel="stylesheet" href="http://2016.igem.org/Team:Lethbridge_HS/bootstrapcss?action=raw&ctype=text/css">
+      <link rel="stylesheet" href="http://2016.igem.org/Team:Lethbridge_HS/maincss?action=raw&ctype=text/css">  -->
+        <link rel="stylesheet" href="flaticon.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="js/jquery.localscroll.min.js" type="text/javascript"></script> 
+        <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+
+                	
+
+        <link rel="stylesheet" href="animations.css">
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#blooddrop').addClass('delay-2000 animated pulse');
+                var s = $(".menu");
+                s.addClass("removeNavBarColor"); 
+                $(window).scroll(function(){
+                    var windowPos = $(window).scrollTop();
+                    
+                    if (windowPos >= 50){
+                        s.addClass("makeNavBarColor");  
+                        s.removeClass("removeNavBarColor");
+                        
+                    }
+                    else{
+                        s.addClass("removeNavBarColor");  
+                        s.removeClass("makeNavBarColor");
+                    }
+                })
+            });
+            
+            
+            
+             $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-40
+        },1000);
+        return false;
+      }
+    }
+  });
+});
+        </script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top menu" style="border:none;">
+            <div class="container-fluid" style="padding-left:10%; padding-right:10%;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+                        <span class="sr-only">Toggle navgiation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="color:#CC141C; margin-top:-5%;"><img src="images/WHITELOGO.png" width="90"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="nav navbar-nav navbar-right" >
+                       
+                        
+                        <li class= "dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle = "dropdown">PROJECT<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="project.html">BACKGROUND</a>
+                                    <a href="#">EXPERIMENTS</a>
+                                    <a href="#">RESULTS</a>
+                                    <a href="#">PARTS</a>
+                                    <a href="#">ACHIVEMENTS</a>
+                                </li>
+                            </ul>    
+                        </li>
+                        
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0; ">HUMAN PRACTICES</a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0;">NOTEBOOK</a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0; ">SAFETY</a></li>
+                                                
+                        <li class= "dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle = "dropdown">TEAM<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="project.html">STUDENTS</a>
+                                    <a href="#">ADVISORS</a>
+                                    <a href="#">SPONSORS</a>
+                                    <a href="#">ATTRIBUTIONS</a>
+                                    <a href="#">COLLABORATIONS</a>
+                                </li>
+                            </ul>    
+                        </li>
+                        
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0 ">IGEM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="jumbotron slide" id="slide0" style="">
+            <h1 id="firsttitle" style=""> <b>Coaugi</b>Coli</h1>
+            <h3 id="secondtitle" style="text-align:center;"> Lethbridge HS iGEM Team</h3>
+            <!---<img id="blooddrop" src="images/blooddrop.png" width="50">-->
+            <!--<div style="position:relative;">
+            <video width="100%" autoplay muted loop style="float:left; position:absolute; z-index:5;">
+                <source src="Product%20Demonstration%20Video%20for%20Lumify%20USB%20Solar%20Fairy%20Lights.mp4" type="video/mp4">
+            </video>
+                </div>-->
+            
+            <a href="#moveDown"><img id="blooddrop" src="http://2016.igem.org/wiki/images/f/f5/T—lethbridgehs--down_and.png" width="70"></a>
+        </div>
+        
+        
+        
+
+         <div  class="jumbotron slide" id="slidesecond" style="">
+             <a name="moveDown"></a>
+                                <h1 style="text-align:center;"> Features of the InstaClotter</h1>
+            <div class="row">
+                <div class="col-md-8">
+ 
+                    <li class="slidesecondlist">
+                        <ul> <img src="images/blood-drops-clip-art-drop-clip-art-vector-clip-EknQci-clipart.png" width="25px" style="margin-right:10px;"> It is very good</ul>
+                        <ul><img src="images/blood-drops-clip-art-drop-clip-art-vector-clip-EknQci-clipart.png" width="25px" style="margin-right:10px;">It can save you</ul>
+                         <ul><img src="images/blood-drops-clip-art-drop-clip-art-vector-clip-EknQci-clipart.png" width="25px" style="margin-right:10px;">Recived five start rating from 5 organizations</ul>
+                        <ul><img src="images/blood-drops-clip-art-drop-clip-art-vector-clip-EknQci-clipart.png" width="25px" style="margin-right:10px;">Recived five start rating from 5 organizations</ul>
+
+                    </li>
+                </div>
+                
+                <div class="col-md-4">
+                    <img src="images/Apple-iPad-Air2.png" width="360px">
+                </div>
+             </div>  
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="jumbotron slide" id="slide1" style="">
+            <div id="slide1Sub">
+            <h2 id="slide1title" style="color:black; text-align:center;">What is the Blood Clotter?</h2>
+                <p id="slide1para">When our team started meeting, we had many great project ideas, such as taking on autoimmune disorders or treating fetal alcohol syndrome. We also considered bacterial fuel cells, terraforming bacteria, biofilm inhibitors, and synthetic ivory production. After a gladiator-style fight to the death, we narrowed it down to clotting blood. We asked ourselves who we wanted to help, what kind of wounds we wanted to treat, and how we could interact with our community. We decided that we want to focus on the medical field, more specifically medical treatment in emergency situations. We recognized that in most emergency situations, excessive blood loss is a threat that could result in hypovolemic shock, anemia or even death. Preventing or reducing blood loss would greatly increase the chances of survival as well as speeding up the healing process. After discussing different wound sizes and how our project could be applied to each, we decided we would focus mainly on treating medium to large sized wounds. Then, we started designing a construct based around snake venom. Some snake venoms are very effective at inducing blood clotting by skipping many steps of the clotting pathway and thereby greatly increasing the rate of blood clotting. The Cerastes cerastes snake venom acts similar to thrombin in the blood clotting cascade, causing inactive fibrinogen to be converted into active fibrin monomers. Along with Factor XVIII, the fibrin monomers form a crosslink structure that traps red blood cells, resulting in a blood clot.<br><br>
+For human practices we have been contacting professionals in relevant fields to ensure that our project is applicable in real-world emergency situations. Another component of our human practices is the community outreach we have been conducting. For example, we have gone to schools in Southern Alberta to educate students with respect to our project and iGEM. In addition, we have devised a public survey, went door to door, and created a social media account to try and establish an amicable rapport with those affected by severe bleeding and members of our community.<br><br>
+In the lab, we hope to successfully express our recombinant DNA in E.coli, and produce an effective solution for clotting blood. After that, we hope to develop a fast-acting and effective prototype that will be able to clot pressurized blood being pumped through a simulated wound. If this is accomplished, we’ll attempt to design a tool or delivery system to make sure that we apply the right amount of our system to the wound in order to get the best clot. In addition, we want to test whether or not the clotting factors can move through the body causing an embolism elsewhere. This is something we want to prevent and need to test if our system can remain local in the wound.<br><br>
+Our team hopes that our inexpensive and effective technology will be able to help military personnel, disaster victims, and other people affected with severe bleeding survive their ordeals, and have a better quality of life afterwards. In doing so, we will reduce strain on healthcare systems, simplify treatment of major bleeding for EMTs and doctors, and keep families together.</p>
+            <!------<iframe style="display:block; margin:auto;" width="560" height="315" src="https://www.youtube.com/embed/4WvnjCkLbvY" frameborder="0" allowfullscreen></iframe>-->
+            
+        </div>
+        </div>
+        <div class="jumbotron slide" id="slide6" style="">
+                    <div class="doublepic1">
+                        <h1>Lots of Great Lab Stuff</h1>
+                    </div>
+                    <div class="doublepic2">
+                        <h1>Lots of Human practices</h1>
+                    </div>
+            </div>    
+        </div>
+        
+         <div class="jumbotron slide" id="slidesecond" style="">
+                                <h1 style="text-align:center;"> Features of the InstaClotter</h1>
+            <div class="row">
+                <div class="col-md-8">
+ 
+                    <li class="slidesecondlist">
+                        <ul> <img src="images/blood-drops-clip-art-drop-clip-art-vector-clip-EknQci-clipart.png" width="25px" style="margin-right:10px;"> It is very good</ul>
+                        <ul><img src="images/blood-drops-clip-art-drop-clip-art-vector-clip-EknQci-clipart.png" width="25px" style="margin-right:10px;">It can save you</ul>
+                         <ul><img src="images/blood-drops-clip-art-drop-clip-art-vector-clip-EknQci-clipart.png" width="25px" style="margin-right:10px;">Recived five start rating from 5 organizations</ul>
+                        <ul><img src="images/blood-drops-clip-art-drop-clip-art-vector-clip-EknQci-clipart.png" width="25px" style="margin-right:10px;">Recived five start rating from 5 organizations</ul>
+
+                    </li>
+                </div>
+                
+                <div class="col-md-4">
+                    <img src="images/Apple-iPad-Air2.png" width="360px">
+                </div>
+             </div>  
+        </div>
+        <div class="jumbrotron slide" id="homepageslide5">
+            <div class="containerForExploreTeam">
+            <h1 class="exploreteam"> EXPLORE OUR TEAM PAGE </h1>
+            <a href="#" class="button" style="">Click me</a>
+                </div>
+        </div> 
+    <div class="jumbrotron slide" id="homepageslide6">
+<p id="credits">Designed by Dinula De Silva</p>
+        </div> 
+        <!----<div class="jumbotron slide" id="slide3">
+            <h1 style="color: white; text-align:center; font-size: 3em; margin-top:0;">Features of the InstaClotter</h1>
+            <div id="feature-carousel" class="carousel slide" data-ride="carousel1" data-interval="3000">
+                
+                
+                <div class="carousel-inner">
+                    <div class="item active animatedSlide">
+                       <h1 class="an-slide-title"> Hospital Approved</h1>
+                        <img class="an-slide-img" src="images/syringe.png" width="500">
+                        <div class="carousel-caption">
+                            <h3>Caption</h3>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <h1 class="an-slide-title"> Hospital Approved</h1>
+                        <img class="an-slide-img" src="images/syringe.png" width="500">
+                        <div class="carousel-caption">
+                            <h3>Caption</h3>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <h1 class="an-slide-title"> Hospital Approved</h1>
+                        <img class="an-slide-img" src="images/syringe.png" width="500">
+                        <div class="carousel-caption">
+                            <h3>Caption</h3>
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#feature-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#feature-carousel" data-slide-to="1"></li>
+                    <li data-target="#feature-carousel" data-slide-to="2"></li>
+                </ol>
+                
+            </div>
+        </div>-->
+        
+        
+        
+        <div class="jumbotron slide" id="slide2" style="">
+        </div>
+    </body>
+</html>

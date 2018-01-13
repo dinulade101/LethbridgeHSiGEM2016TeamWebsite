@@ -1,0 +1,405 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="animations.css">
+                <link rel="stylesheet" href="flaticon.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="js/jquery.localscroll.min.js" type="text/javascript"></script> 
+        <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#blooddrop').addClass('delay-2000 animated pulse');
+                var s = $(".menu");
+                s.addClass("removeNavBarColor"); 
+                         
+                
+                var sideBar = $('.notebookSideBar'),
+                originalY = sideBar.offset().top;
+                var topMargin = 100;
+  
+                $(window).scroll(function(){
+                    var windowPos = $(window).scrollTop();
+                    var scrollTop = $(window).scrollTop();
+
+                   if (scrollTop > originalY ){
+                        sideBar.addClass("fixNoteBookSideBar");  
+                        sideBar.removeClass("removeFixNoteBookSideBar");
+                       /*sideBar.css({top: scrollTop/1.5 - originalY + topMargin});*/
+                   }
+                    if (scrollTop < originalY){
+                        sideBar.removeClass("fixNoteBookSideBar");  
+                        sideBar.addClass("removeFixNoteBookSideBar");
+                    }
+            
+                    
+                    if (windowPos >= 50){
+                        s.addClass("makeNavBarColor");  
+                        s.removeClass("removeNavBarColor");
+                        
+                    }
+                    else{
+                        s.addClass("removeNavBarColor");  
+                        s.removeClass("makeNavBarColor");
+                    }
+                })
+            });
+        </script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top menu" style="border:none;">
+            <div class="container-fluid" style="padding-left:10%; padding-right:10%;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+                        <span class="sr-only">Toggle navgiation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="color:#CC141C; margin-top:-5%;"><img src="images/logo.png" width="170"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li><a href="project.html" style="" class="menuitem active" style="margin:0; padding:0; "><div class="glyph-icon flaticon-dna-structure menuIcon active"></div>Project</a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0; "><div class="glyph-icon flaticon-earth menuIcon"></div>Human Practices</a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0;"><div class="glyph-icon flaticon-notebook menuIcon "></div>Notebook</a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0; "><div class="glyph-icon flaticon-safety-glasses menuIcon "></div>Safety</a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0; "><div class="glyph-icon flaticon-people  menuIcon "></div>Team</a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0 "><div class="glyph-icon flaticon-earth menuIcon "></div>iGEM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="jumbotron slide" id="slide_project_0" style="">
+            <!---<img id="blooddrop" src="images/blooddrop.png" width="50">-->
+            <img class="coverCircle" src="images/teamcircle.png" width="110px">
+        </div>
+
+         <div class="container-fluid" id="regularPageBody">
+                    <p>Please click on the different events on the lab to read more about them. Also, feel free to click on the months on the sidebar to reveal a list of lab dates.</p>
+                    <div class="row" style="text-align:center;">
+                        <div class="col-md-2 col-md-push-10 ">
+                            <div class="notebookSideBar">
+                            <h1 class="noteBookMonthLabels"> April </h1>
+                            <ul id="dateList">
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                
+                            </ul>
+
+                            <h1 class="noteBookMonthLabels"> May </h1>
+                            <ul id="dateList">
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                
+                            </ul>
+
+                            <h1 class="noteBookMonthLabels"> June </h1>
+                             <ul id="dateList">
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                
+                            </ul>
+
+                            <h1 class="noteBookMonthLabels"> July </h1>
+                             <ul id="dateList">
+                                <li><a href="#July1">2015-July-10</li></a>
+                                <li><a href="#July2">2015-July-10</li></a>
+                                <li><a href="#July3">2015-July-10</li></a>
+                                <li><a href="#July4">2015-July-10</li></a>
+                                <li><a href="#July5">2015-July-10</li></a>
+
+                                
+                            </ul>
+
+                            <h1 class="noteBookMonthLabels"> August </h1>
+                             <ul id="dateList">
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                
+                            </ul>
+
+                            <h1 class="noteBookMonthLabels"> September </h1>
+                             <ul id="dateList">
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                <li>Date</li>
+                                
+                            </ul>
+                        </div>
+</div>
+                        <div class="col-md-10 col-md-pull-2">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="tl_month">  
+                                        <h2>July</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a name="July1"></a>
+                                    <p class="tl_time">2015-July-10</p>
+                                    <div class="tl_icon">
+                                        <div style="" class="notebookIcon flaticon-dna-structure"></div>
+                                    </div>
+                                    <div class="tl_label">
+                                        <div class="topOfTimeLineEntry">
+                                        <h2 class="tl_label_header">Digestion of Signal Sequences</h2>
+                                            </div>
+                                        <div class="dateContent">
+                                        <h3>Names: Billy, Bob, and Cob</h3>
+                                            
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                        <table class="table table-striped table-bordered">
+                                            
+                                            <caption>Title for table</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>Components</th>
+                                                    <th>Volume (ul)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>MILLI-Q H2O</td>
+                                                     <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 Cutsmart buffer</td>
+                                                     <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>pDNA (~100ug/ml)</td>
+                                                    <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Enzyme I</td>
+                                                    <td>0.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Enzyme II</td>
+                                                    <td>0.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total</td>
+                                                    <td>10</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                            </div>
+                                            <div class="col-md-6">
+                                        <table class="table table-striped table-bordered">
+                                            
+                                            <caption>Title for table</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>Components</th>
+                                                    <th>Volume (ul)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>MILLI-Q H2O</td>
+                                                     <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 Cutsmart buffer</td>
+                                                     <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>pDNA (~100ug/ml)</td>
+                                                    <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Enzyme I</td>
+                                                    <td>0.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Enzyme II</td>
+                                                    <td>0.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total</td>
+                                                    <td>10</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                            </div>
+                                    </div>
+                                    </div>
+                                        
+                                </li>
+                                <li>
+                                    <a name="July2"></a>
+                                    <p class="tl_time">2015-July-10</p>
+                                    <div class="tl_icon">
+                                        <img src="images/Plasmid.png" width="30px" height="30px">
+                                    </div>
+                                    <div class="tl_label">
+                                        <h2 class="tl_label_header">Ligation</h2>
+                                        <p>We did this stuff...</p>
+                                    </div>
+                                </li>
+                                <a name="July3"></a>
+                                <li>
+                                    <p class="tl_time">2015-July-10</p>
+                                    <div class="tl_icon">
+                                        <img src="images/Plasmid.png" width="30px" height="30px">
+                                    </div>
+                                    <div class="tl_label">
+                                        <h2 class="tl_label_header">Ligation</h2>
+                                        <p>We did this stuff...</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a name="July4"></a>
+                                    <p class="tl_time">2015-July-10</p>
+                                    <div class="tl_icon">
+                                        <img src="images/Plasmid.png" width="30px" height="30px">
+                                    </div>
+                                    <div class="tl_label">
+                                        <h2 class="tl_label_header">Ligation</h2>
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam maximus erat vitae orci rutrum finibus. Nullam quis nunc tincidunt, sodales risus id, dignissim neque. Pellentesque efficitur, sem non lobortis euismod, justo mi laoreet turpis, sed fringilla enim diam non massa. Suspendisse imperdiet vel enim a elementum. Nam pretium diam vel metus rhoncus ullamcorper. Suspendisse in consectetur tortor. Nulla diam justo, lobortis suscipit erat quis, rhoncus accumsan tellus. Cras rutrum, lorem ac sodales accumsan, ante diam ornare tellus, in tincidunt metus magna quis lacus. Ut auctor metus sed lectus auctor volutpat. Aliquam ac nulla maximus, congue sem a, feugiat mauris.
+
+</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a name="July5">                          </a>
+                                    <p class="tl_time">2015-July-10</p>
+                                    <div class="tl_icon">
+                                        <img src="images/Plasmid.png" width="30px" height="30px">
+                                    </div>
+                                    <div class="tl_label">
+                                        <h2 class="tl_label_header">Ligation</h2>
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam maximus erat vitae orci rutrum finibus. Nullam quis nunc tincidunt, sodales risus id, dignissim neque. Pellentesque efficitur, sem non lobortis euismod, justo mi laoreet turpis, sed fringilla enim diam non massa. Suspendisse imperdiet vel enim a elementum. Nam pretium diam vel metus rhoncus ullamcorper. Suspendisse in consectetur tortor. Nulla diam justo, lobortis suscipit erat quis, rhoncus accumsan tellus. Cras rutrum, lorem ac sodales accumsan, ante diam ornare tellus, in tincidunt metus magna quis lacus. Ut auctor metus sed lectus auctor volutpat. Aliquam ac nulla maximus, congue sem a, feugiat mauris.
+
+</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tl_month">  
+                                        <h2>August</h2>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <p class="tl_time">2015-July-10</p>
+                                    <div class="tl_icon">
+                                        <img src="images/Plasmid.png" width="30px" height="30px">
+                                    </div>
+                                    <div class="tl_label">
+                                        <h2 class="tl_label_header">Ligation</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed commodo dui, id ultricies massa. Aliquam erat volutpat. Proin maximus, nibh eu luctus tincidunt, libero dui euismod ex, a pellentesque sem nulla ac lorem. Pellentesque sagittis leo eget ornare efficitur. Nullam vulputate rutrum eros, quis mollis ipsum tempus eu. Integer porttitor quam vitae finibus blandit. Nulla vulputate dolor dui, et cursus dolor ullamcorper nec. Nunc dictum scelerisque purus, ut pulvinar sapien tristique eget. Donec feugiat risus vel nibh pellentesque auctor id id neque. Aenean facilisis dui vitae massa finibus, et condimentum dui consectetur. Pellentesque tempus imperdiet posuere. Sed ornare urna in dictum dictum. Vestibulum suscipit, tortor sit amet finibus bibendum, dui nunc semper enim, eget pulvinar sem justo nec risus. Integer justo ex, aliquet sit amet massa at, aliquam vestibulum dolor. Sed dictum nunc eu sem finibus eleifend.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="tl_time">2015-July-10</p>
+                                    <div class="tl_icon">
+                                        <img src="images/Plasmid.png" width="30px" height="30px">
+                                    </div>
+                                    <div class="tl_label">
+                                        <h2 class="tl_label_header">Ligation</h2>
+                                        <p>We did this stuff...</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="tl_time">2015-July-10</p>
+                                    <div class="tl_icon">
+                                        <img src="images/Plasmid.png" width="30px" height="30px">
+                                    </div>
+                                    <div class="tl_label">
+                                        <h2 class="tl_label_header">Ligation</h2>
+                                        <p>We did this stuff...</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="tl_time">2015-July-10</p>
+                                    <div class="tl_icon">
+                                        <img src="images/Plasmid.png" width="30px" height="30px">
+                                    </div>
+                                    <div class="tl_label">
+                                        <h2 class="tl_label_header">Ligation</h2>
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam maximus erat vitae orci rutrum finibus. Nullam quis nunc tincidunt, sodales risus id, dignissim neque. Pellentesque efficitur, sem non lobortis euismod, justo mi laoreet turpis, sed fringilla enim diam non massa. Suspendisse imperdiet vel enim a elementum. Nam pretium diam vel metus rhoncus ullamcorper. Suspendisse in consectetur tortor. Nulla diam justo, lobortis suscipit erat quis, rhoncus accumsan tellus. Cras rutrum, lorem ac sodales accumsan, ante diam ornare tellus, in tincidunt metus magna quis lacus. Ut auctor metus sed lectus auctor volutpat. Aliquam ac nulla maximus, congue sem a, feugiat mauris.
+
+</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="tl_time">2015-July-10</p>
+                                    <div class="tl_icon">
+                                        <img src="images/Plasmid.png" width="30px" height="30px">
+                                    </div>
+                                    <div class="tl_label">
+                                        <h2 class="tl_label_header">Ligation</h2>
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam maximus erat vitae orci rutrum finibus. Nullam quis nunc tincidunt, sodales risus id, dignissim neque. Pellentesque efficitur, sem non lobortis euismod, justo mi laoreet turpis, sed fringilla enim diam non massa. Suspendisse imperdiet vel enim a elementum. Nam pretium diam vel metus rhoncus ullamcorper. Suspendisse in consectetur tortor. Nulla diam justo, lobortis suscipit erat quis, rhoncus accumsan tellus. Cras rutrum, lorem ac sodales accumsan, ante diam ornare tellus, in tincidunt metus magna quis lacus. Ut auctor metus sed lectus auctor volutpat. Aliquam ac nulla maximus, congue sem a, feugiat mauris.
+
+</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                        
+                    
+                    </div>
+        
+    </body>
+</html>

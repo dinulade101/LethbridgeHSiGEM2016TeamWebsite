@@ -1,0 +1,253 @@
+body{
+  background-color: white;  
+    font-family: 'Open Sans', sans-serif;
+}
+.jumbotron {
+    background-color: white;
+    position: relative;
+
+    
+}
+.slide{
+    width:100%;
+    
+    margin: 0;
+    
+}
+#slide0{
+   /* background-image: url("images/120715-hydrogel-drug-band-aid-2-2.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;*/
+    height: 100%;
+     overflow: hidden;
+        margin:0;
+    padding:0;
+}
+#slide_project_0{
+    background-image: url("images/funnyteamcover.png");
+    background-size:cover;
+    background-position: center -10%;
+    background-repeat: no-repeat;
+    height: 90%;
+    overflow: hidden;
+}
+#slide_team_0{
+    background-image: url("images/funnyteamcover.png");
+    background-size:cover;
+    background-position: center -10%;
+    background-repeat: no-repeat;
+    height: 90%;
+    overflow: hidden;
+}
+#slide_hp_0{
+    background-image: url("images/funnyteamcover.png");
+    background-size:cover;
+    background-position: center -10%;
+    background-repeat: no-repeat;
+    height: 90%;
+    overflow: hidden;
+}
+#slide0title{
+    color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#blooddrop{
+    position: absolute;
+    float:left;
+    left: 50%;
+    padding-top: 34%;
+    z-index: 300000;
+    -webkit-animation: fadeInOut 2s infinite;
+    -moz-animation: fadeInOut 2s infinite;
+    -o-animation: fadeInOut 2s infinite;
+    animation: fadeInOut 2s infinite;
+}
+#slide1{
+    /*background-color:#eee7dd;*/
+    background-color:white;
+   /* background-image: url("images/289680_1231091663_large.jpg");
+    background
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;*/
+    color: black;
+    
+}
+#slide1Sub{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+#slide2{
+    background-image: url("images/anotherteamcover.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50%;
+}
+#slide3{
+    background-color: #cf4848;
+    height: 90%;
+    padding-top:2%;
+}ding-top:1%;
+#slide1title{
+    color:red;
+    text-align: center;
+    font-size:60px;
+    margin-top:0%;
+}
+#slide12ndline{
+    color:red;
+    text-align: center;
+    font-size:50px;
+}
+#slide1para{
+    font-size: 1.1em;
+    color: black;
+}
+.logo{
+    float:left;
+    margin-left:9%;
+    margin-top: 1%;
+}
+.navbar-header{
+    margin-top:5px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 15px;
+    padding-top:2px;
+    padding-top:2px;
+    margin-top: 12px;
+}
+.navbar-collapse.collapse {
+    padding-bottom: 6px;
+    padding-top: 3px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+
+    
+}
+
+.removeNavBarColor{
+    background-color: transparent;
+    /*background-color: rgba(0,0,0,0.1);*/
+    
+    
+}
+.makeNavBarColor{
+   /** background-color: #CC141C ;*/
+    background-color: transparent;
+  /*  background-color: rgba(0,0,0,0.1);*/
+    
+}
+
+.navbar-default .navbar-nav>li>a{
+    padding-top: 15px;
+    margin-top: 0;
+    margin-bottom: 0%;
+    padding-bottom: 15px;
+    color:white;
+}
+.navbar-collapse.collapse{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+@-webkit-keyframes fadeInOut{
+    0% { opacity: 0;}
+    50% { opacity: 1; }
+    100% { opacity:0;}
+}
+@-moz-keyframes fadeInOut{
+    0% { opacity: 0;}
+    50% { opacity: 1; }
+    100% { opacity:0;}
+}
+@-o-keyframes fadeInOut{
+    0% { opacity: 0;}
+    50% { opacity: 1; }
+    100% { opacity:0;}
+}
+@keyframes fadeInOut{
+    0% { opacity: 0;}
+    50% { opacity: 1; }
+    100% { opacity:0;}
+}
+
+ [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-family: Flaticon;
+        font-size: 30px;
+        font-style: normal;
+        margin-left: 0px;
+        color: white;
+     
+    }
+
+.glyph {
+        display: inline-block;
+        width: 9em;
+        margin: 1em;
+        text-align: center;
+        vertical-align: top;
+        background: #FFF;
+    }
+    .glyph .glyph-icon {
+        display:block;
+        float: left;
+        
+        font-family:"Flaticon";
+        font-size: 64px;
+    }
+    .glyph .glyph-icon:before {
+        font-size: 64px;
+        color: white;
+        margin-left: 0;
+    }
+.menuIcon{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+.active{
+    background-color: red;
+    color: white !important;
+}
+ [class^="active"]:before, [class*="active"]:before, [class^="active"]:after, [class*="active"]:after {
+     color: white;
+ }
+.coverCircle{
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sidebar{
+    list-style-type: none;
+    list-style-position: inside;
+    color: #cc141c;
+    font-size: 2em;
+    margin-left: 0;
+    padding-left: 0;
+    position: absolute;
+}
+.sidebar li{
+  list-style-position: inside;
+    padding-top: 10px;
+}
+.fixSideBar{
+    position: fixed;
+    top: 8%;
+}
+.removeFixSideBar{
+    position: relative;
+}

@@ -1,0 +1,156 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="animations.css">
+        <link rel="stylesheet" href="simple-sidebar.css">
+                <link rel="stylesheet" href="flaticon.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="js/jquery.localscroll.min.js" type="text/javascript"></script> 
+        <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#blooddrop').addClass('delay-2000 animated pulse');
+                var s = $(".menu");
+                s.addClass("removeNavBarColor"); 
+                              
+                var sideBar = $('.sidebar'),
+                originalY = sideBar.offset().top;
+                var topMargin = 100;
+  
+                $(window).scroll(function(){
+                    var windowPos = $(window).scrollTop();
+                    var scrollTop = $(window).scrollTop();
+
+                   if (scrollTop > originalY ){
+                        sideBar.addClass("fixSideBar");  
+                        sideBar.removeClass("removeFixSideBar");
+                       /*sideBar.css({top: scrollTop/1.5 - originalY + topMargin});*/
+                   }
+                    if (scrollTop < originalY){
+                        sideBar.removeClass("fixSideBar");  
+                        sideBar.addClass("removeFixSideBar");
+                    }
+            
+                    
+                    if (windowPos >= 50){
+                        s.addClass("makeNavBarColor");  
+                        s.removeClass("removeNavBarColor");
+                        
+                    }
+                    else{
+                        s.addClass("removeNavBarColor");  
+                        s.removeClass("makeNavBarColor");
+                    }
+                })
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+                <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand" style="margin-top:10px;">
+                    <a href="#">
+                        <img style=" display:block; margin-left:auto; margin-right:auto;" src="images/logo copy.png" width="170" />
+                    </a>
+                </li>
+                <li style="background-color:#800000;"><a href="project.html" style="" class="menuitem " style="margin:0; padding:0; "><div class="glyph-icon flaticon-shape menuIcon "><p>Project</p></div></a></li>
+                <li style="height:35px; background-color:#ff9999;"><a href="project.html" style="" class="menuitem " style="margin:0; padding:0; "><p style="font-size:0.9em; margin-top:-5px; ">Background</p></a></li>
+                <li style="height:35px; background-color:#ff9999;"><a href="project.html" style="" class="menuitem " style="margin:0; padding:0; "><p style="font-size:0.9em; margin-top:-5px;">Background</p></a></li>
+                <li style="height:35px; background-color:#ff9999;"><a href="project.html" style="" class="menuitem " style="margin:0; padding:0; "><p style="font-size:0.9em; margin-top:-5px;">Background</p></a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0; "><div class="glyph-icon flaticon-shape menuIcon"><p>Human Practices</p></div></a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0;"><div class="glyph-icon flaticon-shape menuIcon "><p>Notebook</p></div></a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0; "><div class="glyph-icon flaticon-shape menuIcon "><p>Safety</p></div></a></li>
+                        <li><a href="#" style="" class="menuitem" style="margin:0; padding:0; "><div class="glyph-icon flaticon-shape  menuIcon "><p>Team</p></div></a></li>
+                        <li><a href="#" style="    border-bottom: 2px solid black;
+" class="menuitem" style="margin:0; padding:0 "><div class="glyph-icon flaticon-shape menuIcon "><p>iGEM</p></div></a></li>
+                
+                
+            </ul>
+            
+            <ul style=" margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;">
+                <li style="display:inline-block; margin-left:5px; margin-bottom:5px;">
+                    <a href="#"><img style="" width="60px" src="images/igemlog.png" /></a>
+                </li>
+                
+                <li style="display:inline-block; margin-left:5px;"><a href="#"><div style="" class="glyph-icon glyph-icon2 flaticon-twitter-logo-button  menuIcon2"></a></li>
+                    
+                    <li style="display:inline-block; margin-left:10px;"><a href="#"><div style="" class="glyph-icon glyph-icon2 flaticon-facebook-logo-button  menuIcon2"></a></li>
+                        
+                        
+                        <li style="display:inline-block; margin-left:10px;"><a href="#"><div style="" class="glyph-icon glyph-icon2 flaticon-instagram-logo  menuIcon2"></a></li>
+                            
+                            <li style="display:inline-block; margin-left:10px;"><a href="#"><div style="" class="glyph-icon glyph-icon2 flaticon-youtube-symbol  menuIcon2"></a></li>
+            </ul>
+   
+        </div>
+            <div id="page-content-wrapper">
+        <div class="jumbotron slide" id="slide_project_0" style="">
+            <!---<img id="blooddrop" src="images/blooddrop.png" width="50">-->
+            <img class="coverCircle" src="images/teamcircle.png" width="110px">
+        </div>
+        <div class="container-fluid">
+                 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ultrices mauris, feugiat facilisis nulla. Aliquam a purus magna. Mauris congue sapien sed odio imperdiet, eget rhoncus tellus volutpat. Maecenas justo massa, pharetra eu pulvinar non, gravida in justo. In vestibulum consectetur lacus, eu tincidunt lacus commodo eu. Vivamus in dolor libero. Morbi eget posuere sapien, ac sollicitudin nisi. Suspendisse lectus lacus, auctor ut commodo ac, ornare ac nibh. Fusce scelerisque commodo lorem, vitae dignissim purus consectetur nec. Nunc ex ante, mattis vitae tortor a, scelerisque sodales tellus. Proin pulvinar turpis sed placerat elementum. Cras ultricies mi libero. Mauris sit amet tristique dui, et varius risus.<br><br>
+
+Pellentesque sed elementum mauris. Proin id commodo nunc. In quis lorem ut diam euismod sodales. Integer ante mi, sodales in sodales ac, auctor nec velit. Nam lorem metus, bibendum ut augue mollis, malesuada mollis est. Ut vitae pharetra mi. Aenean scelerisque libero nunc. Aenean vel lacinia tortor. Duis quis est leo. Fusce placerat molestie libero ut dignissim.<br><br>
+
+Aliquam felis nisi, pharetra non aliquam sed, commodo vitae dui. Sed id gravida lorem, eu luctus lorem. Cras a nibh nulla. Proin at nisl lacus. Aenean porttitor at arcu ut pretium. Aliquam leo magna, tempor venenatis est sed, pharetra rhoncus tellus. Nunc consequat ante sit amet eleifend vulputate. Cras faucibus eget risus ut feugiat. Fusce diam dui, lobortis id dictum ut, commodo vel quam. Sed quis velit blandit, congue neque nec, congue eros. Aenean feugiat purus vel justo tempor blandit. Nunc tempor dolor sodales hendrerit luctus.<br><br>
+
+Pellentesque ac neque mauris. Aenean magna diam, ornare et varius id, tincidunt sed mi. Maecenas auctor velit quis facilisis porttitor. Nunc imperdiet mollis sem, quis lacinia ipsum mollis ut. Mauris mattis vehicula purus bibendum tincidunt. Nulla posuere dictum ligula ut eleifend. Phasellus egestas egestas molestie.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ultrices mauris, feugiat facilisis nulla. Aliquam a purus magna. Mauris congue sapien sed odio imperdiet, eget rhoncus tellus volutpat. Maecenas justo massa, pharetra eu pulvinar non, gravida in justo. In vestibulum consectetur lacus, eu tincidunt lacus commodo eu. Vivamus in dolor libero. Morbi eget posuere sapien, ac sollicitudin nisi. Suspendisse lectus lacus, auctor ut commodo ac, ornare ac nibh. Fusce scelerisque commodo lorem, vitae dignissim purus consectetur nec. Nunc ex ante, mattis vitae tortor a, scelerisque sodales tellus. Proin pulvinar turpis sed placerat elementum. Cras ultricies mi libero. Mauris sit amet tristique dui, et varius risus.<br><br>
+
+Pellentesque sed elementum mauris. Proin id commodo nunc. In quis lorem ut diam euismod sodales. Integer ante mi, sodales in sodales ac, auctor nec velit. Nam lorem metus, bibendum ut augue mollis, malesuada mollis est. Ut vitae pharetra mi. Aenean scelerisque libero nunc. Aenean vel lacinia tortor. Duis quis est leo. Fusce placerat molestie libero ut dignissim.<br><br>
+
+Aliquam felis nisi, pharetra non aliquam sed, commodo vitae dui. Sed id gravida lorem, eu luctus lorem. Cras a nibh nulla. Proin at nisl lacus. Aenean porttitor at arcu ut pretium. Aliquam leo magna, tempor venenatis est sed, pharetra rhoncus tellus. Nunc consequat ante sit amet eleifend vulputate. Cras faucibus eget risus ut feugiat. Fusce diam dui, lobortis id dictum ut, commodo vel quam. Sed quis velit blandit, congue neque nec, congue eros. Aenean feugiat purus vel justo tempor blandit. Nunc tempor dolor sodales hendrerit luctus.<br><br>
+
+Pellentesque ac neque mauris. Aenean magna diam, ornare et varius id, tincidunt sed mi. Maecenas auctor velit quis facilisis porttitor. Nunc imperdiet mollis sem, quis lacinia ipsum mollis ut. Mauris mattis vehicula purus bibendum tincidunt. Nulla posuere dictum ligula ut eleifend. Phasellus egestas egestas molestie.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ultrices mauris, feugiat facilisis nulla. Aliquam a purus magna. Mauris congue sapien sed odio imperdiet, eget rhoncus tellus volutpat. Maecenas justo massa, pharetra eu pulvinar non, gravida in justo. In vestibulum consectetur lacus, eu tincidunt lacus commodo eu. Vivamus in dolor libero. Morbi eget posuere sapien, ac sollicitudin nisi. Suspendisse lectus lacus, auctor ut commodo ac, ornare ac nibh. Fusce scelerisque commodo lorem, vitae dignissim purus consectetur nec. Nunc ex ante, mattis vitae tortor a, scelerisque sodales tellus. Proin pulvinar turpis sed placerat elementum. Cras ultricies mi libero. Mauris sit amet tristique dui, et varius risus.<br><br>
+
+Pellentesque sed elementum mauris. Proin id commodo nunc. In quis lorem ut diam euismod sodales. Integer ante mi, sodales in sodales ac, auctor nec velit. Nam lorem metus, bibendum ut augue mollis, malesuada mollis est. Ut vitae pharetra mi. Aenean scelerisque libero nunc. Aenean vel lacinia tortor. Duis quis est leo. Fusce placerat molestie libero ut dignissim.<br><br>
+
+Aliquam felis nisi, pharetra non aliquam sed, commodo vitae dui. Sed id gravida lorem, eu luctus lorem. Cras a nibh nulla. Proin at nisl lacus. Aenean porttitor at arcu ut pretium. Aliquam leo magna, tempor venenatis est sed, pharetra rhoncus tellus. Nunc consequat ante sit amet eleifend vulputate. Cras faucibus eget risus ut feugiat. Fusce diam dui, lobortis id dictum ut, commodo vel quam. Sed quis velit blandit, congue neque nec, congue eros. Aenean feugiat purus vel justo tempor blandit. Nunc tempor dolor sodales hendrerit luctus.<br><br>
+
+Pellentesque ac neque mauris. Aenean magna diam, ornare et varius id, tincidunt sed mi. Maecenas auctor velit quis facilisis porttitor. Nunc imperdiet mollis sem, quis lacinia ipsum mollis ut. Mauris mattis vehicula purus bibendum tincidunt. Nulla posuere dictum ligula ut eleifend. Phasellus egestas egestas molestie.<br><br>
+                    Aliquam felis nisi, pharetra non aliquam sed, commodo vitae dui. Sed id gravida lorem, eu luctus lorem. Cras a nibh nulla. Proin at nisl lacus. Aenean porttitor at arcu ut pretium. Aliquam leo magna, tempor venenatis est sed, pharetra rhoncus tellus. Nunc consequat ante sit amet eleifend vulputate. Cras faucibus eget risus ut feugiat. Fusce diam dui, lobortis id dictum ut, commodo vel quam. Sed quis velit blandit, congue neque nec, congue eros. Aenean feugiat purus vel justo tempor blandit. Nunc tempor dolor sodales hendrerit luctus.<br><br>
+
+Pellentesque ac neque mauris. Aenean magna diam, ornare et varius id, tincidunt sed mi. Maecenas auctor velit quis facilisis porttitor. Nunc imperdiet mollis sem, quis lacinia ipsum mollis ut. Mauris mattis vehicula purus bibendum tincidunt. Nulla posuere dictum ligula ut eleifend. Phasellus egestas egestas molestie.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ultrices mauris, feugiat facilisis nulla. Aliquam a purus magna. Mauris congue sapien sed odio imperdiet, eget rhoncus tellus volutpat. Maecenas justo massa, pharetra eu pulvinar non, gravida in justo. In vestibulum consectetur lacus, eu tincidunt lacus commodo eu. Vivamus in dolor libero. Morbi eget posuere sapien, ac sollicitudin nisi. Suspendisse lectus lacus, auctor ut commodo ac, ornare ac nibh. Fusce scelerisque commodo lorem, vitae dignissim purus consectetur nec. Nunc ex ante, mattis vitae tortor a, scelerisque sodales tellus. Proin pulvinar turpis sed placerat elementum. Cras ultricies mi libero. Mauris sit amet tristique dui, et varius risus.<br><br>
+
+Pellentesque sed elementum mauris. Proin id commodo nunc. In quis lorem ut diam euismod sodales. Integer ante mi, sodales in sodales ac, auctor nec velit. Nam lorem metus, bibendum ut augue mollis, malesuada mollis est. Ut vitae pharetra mi. Aenean scelerisque libero nunc. Aenean vel lacinia tortor. Duis quis est leo. Fusce placerat molestie libero ut dignissim.<br><br>
+
+Aliquam felis nisi, pharetra non aliquam sed, commodo vitae dui. Sed id gravida lorem, eu luctus lorem. Cras a nibh nulla. Proin at nisl lacus. Aenean porttitor at arcu ut pretium. Aliquam leo magna, tempor venenatis est sed, pharetra rhoncus tellus. Nunc consequat ante sit amet eleifend vulputate. Cras faucibus eget risus ut feugiat. Fusce diam dui, lobortis id dictum ut, commodo vel quam. Sed quis velit blandit, congue neque nec, congue eros. Aenean feugiat purus vel justo tempor blandit. Nunc tempor dolor sodales hendrerit luctus.<br><br>
+
+Pellentesque ac neque mauris. Aenean magna diam, ornare et varius id, tincidunt sed mi. Maecenas auctor velit quis facilisis porttitor. Nunc imperdiet mollis sem, quis lacinia ipsum mollis ut. Mauris mattis vehicula purus bibendum tincidunt. Nulla posuere dictum ligula ut eleifend. Phasellus egestas egestas molestie.<br><br>
+                    Aliquam felis nisi, pharetra non aliquam sed, commodo vitae dui. Sed id gravida lorem, eu luctus lorem. Cras a nibh nulla. Proin at nisl lacus. Aenean porttitor at arcu ut pretium. Aliquam leo magna, tempor venenatis est sed, pharetra rhoncus tellus. Nunc consequat ante sit amet eleifend vulputate. Cras faucibus eget risus ut feugiat. Fusce diam dui, lobortis id dictum ut, commodo vel quam. Sed quis velit blandit, congue neque nec, congue eros. Aenean feugiat purus vel justo tempor blandit. Nunc tempor dolor sodales hendrerit luctus.<br><br>
+
+Pellentesque ac neque mauris. Aenean magna diam, ornare et varius id, tincidunt sed mi. Maecenas auctor velit quis facilisis porttitor. Nunc imperdiet mollis sem, quis lacinia ipsum mollis ut. Mauris mattis vehicula purus bibendum tincidunt. Nulla posuere dictum ligula ut eleifend. Phasellus egestas egestas molestie.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ultrices mauris, feugiat facilisis nulla. Aliquam a purus magna. Mauris congue sapien sed odio imperdiet, eget rhoncus tellus volutpat. Maecenas justo massa, pharetra eu pulvinar non, gravida in justo. In vestibulum consectetur lacus, eu tincidunt lacus commodo eu. Vivamus in dolor libero. Morbi eget posuere sapien, ac sollicitudin nisi. Suspendisse lectus lacus, auctor ut commodo ac, ornare ac nibh. Fusce scelerisque commodo lorem, vitae dignissim purus consectetur nec. Nunc ex ante, mattis vitae tortor a, scelerisque sodales tellus. Proin pulvinar turpis sed placerat elementum. Cras ultricies mi libero. Mauris sit amet tristique dui, et varius risus.<br><br>
+
+Pellentesque sed elementum mauris. Proin id commodo nunc. In quis lorem ut diam euismod sodales. Integer ante mi, sodales in sodales ac, auctor nec velit. Nam lorem metus, bibendum ut augue mollis, malesuada mollis est. Ut vitae pharetra mi. Aenean scelerisque libero nunc. Aenean vel lacinia tortor. Duis quis est leo. Fusce placerat molestie libero ut dignissim.<br><br>
+
+Aliquam felis nisi, pharetra non aliquam sed, commodo vitae dui. Sed id gravida lorem, eu luctus lorem. Cras a nibh nulla. Proin at nisl lacus. Aenean porttitor at arcu ut pretium. Aliquam leo magna, tempor venenatis est sed, pharetra rhoncus tellus. Nunc consequat ante sit amet eleifend vulputate. Cras faucibus eget risus ut feugiat. Fusce diam dui, lobortis id dictum ut, commodo vel quam. Sed quis velit blandit, congue neque nec, congue eros. Aenean feugiat purus vel justo tempor blandit. Nunc tempor dolor sodales hendrerit luctus.<br><br>
+
+Pellentesque ac neque mauris. Aenean magna diam, ornare et varius id, tincidunt sed mi. Maecenas auctor velit quis facilisis porttitor. Nunc imperdiet mollis sem, quis lacinia ipsum mollis ut. Mauris mattis vehicula purus bibendum tincidunt. Nulla posuere dictum ligula ut eleifend. Phasellus egestas egestas molestie.<br><br></p>
+
+              </div> 
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
